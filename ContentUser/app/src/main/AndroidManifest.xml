@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.comp262.acb.bookscontentprovider">
+    package="com.comp262.acb.contentuser">
+    //defines the custom permissions
     <permission android:name="com.comp262.acb.provider.Books.read"/>
     <permission android:name="com.comp262.acb.provider.Books.write"/>
+    //establishes that these permissions are necessary
+    <uses-permission android:name="com.comp262.acb.provider.Books.read"/>
+    <uses-permission android:name="com.comp262.acb.provider.Books.write"/>
+    
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,13 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <provider
-            android:authorities="com.comp262.acb.provider.Books"
-            android:name="BooksProvider"
-            android:exported="true"
-            android:readPermission="com.comp262.acb.provider.Books.read"
-            android:writePermission="com.comp262.acb.provider.Books.write">
-        </provider>
     </application>
 
 </manifest>
