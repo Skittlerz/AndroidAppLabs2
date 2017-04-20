@@ -4,7 +4,7 @@
     //defines the custom permissions
     <permission android:name="com.comp262.acb.provider.Books.read"/>
     <permission android:name="com.comp262.acb.provider.Books.write"/>
-    //establishes that these permissions are necessary
+    //establishes that these permissions are used
     <uses-permission android:name="com.comp262.acb.provider.Books.read"/>
     <uses-permission android:name="com.comp262.acb.provider.Books.write"/>
     
