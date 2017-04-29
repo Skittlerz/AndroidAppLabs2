@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.comp262.acb.simpleservice">
+    package="com.comp262.acb.serviceexample">
 
     <application
         android:allowBackup="true"
@@ -15,14 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        //all services  must be declared in the  Manifest file
-        //adding an intent filter here makes your service available to other applications
-        <service android:name=".MyService">
-            <intent-filter>
-                <action android:name="com.comp262.MyService" />
-            </intent-filter>
-        </service>
-        <service android:name=".MyIntentService"/>
+        <activity android:name=".ViewActivity"
+                android:parentActivityName=".MainActivity"
+            android:label="View">
+        </activity>
+        <service android:name=".URLService"
+            android:exported="true"></service>
     </application>
 
 </manifest>
