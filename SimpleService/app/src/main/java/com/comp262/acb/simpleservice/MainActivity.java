@@ -24,6 +24,6 @@ public class MainActivity extends AppCompatActivity {
     public void stopService(View view){
         //stops the MyService service
         //stopService(new Intent(getBaseContext(), MyService.class));
-        stopService(new Intent(getBaseContext(), MyIntentService.class));
+        stopService(new Intent(MainActivity.this, MyIntentService.class));
     }
 }
