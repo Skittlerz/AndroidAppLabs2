@@ -38,6 +38,7 @@ public class URLService extends IntentService {
     }
 
     private void fetchPagesAndSave(File saveDir, String[] targets){
+        
         for (String target: targets){
 
             URL url = null;
@@ -60,20 +61,17 @@ public class URLService extends IntentService {
                     writer.write(line);
                 }
             }catch (Exception e){
-                e.printStackTrace();
             }finally {
                 if(writer != null){
                     try{
                         writer.close();
                     }catch (Exception e){
-
                     }
                 }
                 if (reader != null){
                     try{
                         reader.close();
                     }catch (Exception e){
-                        e.printStackTrace();
                     }
                 }
             }
