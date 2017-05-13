@@ -29,6 +29,8 @@ public class ViewActivity extends ActionBarActivity {
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         File saveDir = getFilesDir();
 
+        //if saved file exists, populate spinner with file names
+        //when file is selected from spinner, display that page in a webview
         if (saveDir.exists()){
             File dir = new File(saveDir, "URLService");
             dir = saveDir;

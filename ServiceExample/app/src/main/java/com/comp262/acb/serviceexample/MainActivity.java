@@ -40,6 +40,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void fetchWebPages(View view){
         EditText editText = (EditText) findViewById(R.id.urlsEditText);
+        //starts URLService as an intent
         Intent intent = new Intent(this, URLService.class);
         intent.putExtra("urls", editText.getText().toString());
         startService(intent);
