@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ImageUrlDisplay</string>
+    <string name="menu_view">View URLs</string>
+    <string name="menu_add">Add URLs</string>
+</resources>

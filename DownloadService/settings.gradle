@@ -1,0 +1,3 @@
+include ':app'
+//need jsoup for html parsing
+include ':jsoup'
