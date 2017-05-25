@@ -175,7 +175,7 @@ public class ContentProvider extends android.content.ContentProvider {
         return _uri;
     }
 
-    // method called when the app is started
+    // method called when the app is first is started
     @Override
     public boolean onCreate(){
         Context context = getContext();

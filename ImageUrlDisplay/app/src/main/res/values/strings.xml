@@ -2,4 +2,6 @@
     <string name="app_name">ImageUrlDisplay</string>
     <string name="menu_view">View URLs</string>
     <string name="menu_add">Add URLs</string>
+    <string name="add_title">Add</string>
+    <string name="view_title">View</string>
 </resources>

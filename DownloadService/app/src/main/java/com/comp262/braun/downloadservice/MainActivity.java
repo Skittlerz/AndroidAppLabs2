@@ -13,7 +13,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.Arrays;
-
+//This class was used for testing purposes
+//Not used in the final product for the midterm
 public class MainActivity extends AppCompatActivity {
 
     static final String PROVIDER_NAME = "com.comp262.acb.provider.URL";
