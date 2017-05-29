@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         btnViewBender.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                //when clicked, display bender picture and toast
                 Toast.makeText(getApplicationContext(), "View Bender", Toast.LENGTH_LONG).show();
                 imgSwitcher.setImageResource(R.mipmap.bender);
             }
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         btnViewSpaceman.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                //when clicked, display spaceman picture and toast
                 Toast.makeText(getApplicationContext(), "View Spaceman", Toast.LENGTH_LONG).show();
                 imgSwitcher.setImageResource(R.mipmap.spaceman);
             }
